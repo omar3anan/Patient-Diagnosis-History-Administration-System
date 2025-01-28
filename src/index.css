@@ -1,0 +1,317 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 20px; /* Oval shape */
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    color: #ffffff; /* White text on hover */
+    background-color: #00ffc6; /* Bright mint green background */
+}
+
+/* Selected Icon Style */
+nav ul li a.active {
+    color: #ffffff; /* White text for selected icon */
+    background-color: #00ffc6; /* Bright mint green for selected icon */
+}
+
+/* Header Right Section */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Three Dots */
+.three-dots {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.three-dots span {
+    width: 4px;
+    height: 4px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+/* Settings Icon */
+.settings-icon {
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.settings-icon:hover {
+    color: #00ffc6; /* Mint green on hover */
+}
+
+/* User Profile */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.user-role {
+    font-size: 14px;
+    color: #777;
+}
+
+.user-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Hamburger Menu (Slide Button) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+
+/* Main Content Container */
+.content-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Left Side: Patients List */
+.patient-list-section {
+    flex: 1;
+    max-width: 300px; /* Adjust width as needed */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.patient-list-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.patient-list {
+    list-style: none;
+}
+
+.patient-list li {
+    margin-bottom: 10px;
+}
+
+.patient-list li a {
+    text-decoration: none;
+    color: #555;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.patient-list li a:hover {
+    background-color: #00ffc6; /* Mint green background on hover */
+}
+
+.patient-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.patient-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.patient-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.patient-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.patient-gender-age {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Center: Diagnosis Block */
+
+
+/* Right Side: Patient Details */
+.patient-details-section {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .patient-details-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .patient-details-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .patient-info {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Increased gap for better spacing with larger image */
+  }
+  
+  .patient-image img {
+    width: 120px; /* Larger image size */
+    height: 120px; /* Larger image size */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .patient-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .patient-name {
+    font-size: 20px; /* Slightly larger font size for better balance */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .patient-gender-age {
+    font-size: 16px; /* Slightly larger font size for better balance */
+    color: #777;
+  }
+  
+  /* Patient Meta Styling */
+  .patient-meta {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px;
+  }
+  
+  .meta-item {
+    display: flex;
+    flex-direction: column; /* Stack title and value vertically */
+    gap: 5px; /* Space between title and value */
+  }
+  
+  .meta-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .meta-title i {
+    font-size: 16px;
+    color: #00ffc6; /* Mint green color for icons */
+    width: 20px;
+    text-align: center;
+  }
+  
+  .meta-value {
+    font-size: 14px;
+    color: #333;
+    margin-left: 30px; /* Add indentation for better alignment */
+  }
+  
+  .show-all-info {
+    background-color: #00ffc6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .show-all-info:hover {
+    background-color: #00cc9c;
+  }
+  
+  .show-all-info i {
+    font-size: 16px;
+  }

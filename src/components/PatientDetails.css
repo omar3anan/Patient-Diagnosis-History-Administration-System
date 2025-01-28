@@ -1,0 +1,157 @@
+.patient-details-section {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .patient-details-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .patient-details-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .patient-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .patient-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .patient-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .patient-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .patient-gender-age {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Patient Meta Styling */
+  .patient-meta {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px;
+  }
+  
+  .meta-item {
+    display: flex;
+    flex-direction: column; /* Stack title and value vertically */
+    gap: 5px; /* Space between title and value */
+  }
+  
+  .meta-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .meta-title i {
+    font-size: 16px;
+    color: #00ffc6; /* Mint green color for icons */
+    width: 20px;
+    text-align: center;
+  }
+  
+  .meta-value {
+    font-size: 14px;
+    color: #333;
+    margin-left: 30px; /* Add indentation for better alignment */
+  }
+  
+  .show-all-info {
+    background-color: #00ffc6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .show-all-info:hover {
+    background-color: #00cc9c;
+  }
+  
+  .show-all-info i {
+    font-size: 16px;
+  }
+  .lab-results {
+    margin-top: 30px;
+  }
+  
+  .lab-results h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .lab-results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .lab-result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lab-result-item span {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .download-button {
+    background-color: #00cc9c;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #00a87d;
+  }
+  
+  .download-button i {
+    font-size: 16px;
+  }
